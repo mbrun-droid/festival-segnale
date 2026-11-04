@@ -1,14 +1,13 @@
-/* Stile iniziale: tipografia, colori e variabili CSS sono già predisposti.
-   Lavoreremo su collegamenti, CSS condiviso e disposizione delle schede. */
+/* Segnale: esempio completo della consegna su Home e Programma. */
 
-/* Scelte comuni: ogni regola usa var() per richiamarne il valore. */
+/* Valori condivisi: le regole interessate li richiamano con var(). */
 :root {
-  --colore-primario: #2b59be;
-  --colore-primario-scuro: #17238f;
+  --colore-primario: #234c78;
+  --colore-primario-scuro: #163454;
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
-  --font-testo: Verdana, Geneva, sans-serif;
-  --font-titoli: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-testo: Arial, Helvetica, sans-serif;
+  --font-titoli: Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -29,12 +28,11 @@ a {
 }
 
 a:hover {
-  text-decoration-thickness: 3px;
+  text-decoration: underline;
 }
 
-a:focus-visible {
+a:focus {
   outline: 3px solid var(--colore-testo);
-  outline-offset: 4px;
 }
 
 .container {
@@ -45,7 +43,7 @@ a:focus-visible {
 
 .site-header {
   padding: 1.25rem 0;
-  border-bottom: 4px solid #d8d2c5;
+  border-bottom: 4px solid var(--colore-primario);
 }
 
 .brand {
@@ -74,9 +72,6 @@ nav a {
   padding: 0.25rem 0;
 }
 
-nav a[aria-current="page"] {
-  font-weight: bold;
-}
 
 .intro {
   padding: 3rem 0 1rem;
@@ -156,10 +151,14 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-/* Qui inseriremo la regola .event-grid durante la demo. */
+/* Disposizione di base: una colonna. */
+.event-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
 
 .event-card {
-  margin-bottom: 1.5rem;
   overflow: hidden;
   border: 1px solid #b7c0b7;
   border-radius: 0.75rem;
@@ -173,14 +172,11 @@ h3 {
 }
 
 .event-body {
-  padding: 1.25rem;
-}
-
-.event-body p:last-child {
-  margin-bottom: 0;
+  padding: 1.5rem;
 }
 
 .event-place {
+  margin-bottom: 0;
   color: #46564b;
   font-size: 0.875rem;
 }
@@ -205,4 +201,41 @@ h3 {
   top: 1rem;
 }
 
-/* Qui aggiungeremo la media query durante la demo. */
+/* Da 600 px: due colonne. */
+@media (min-width: 600px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Da 1024 px: tre colonne. Questa regola segue quella da 600 px. */
+@media (min-width: 1024px) {
+  .event-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* =========================================
+   Info e luoghi: Galleria Swiper e Mappa
+   ========================================= */
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.swiper-slide p {
+  margin-top: 0.75rem;
+  padding-bottom: 2rem;
+}
+
+/* Adattamento cromatico dei controlli Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--colore-primario-scuro);
+}
+
+#mappa-sedi {
+  margin-bottom: 1rem;
+}
