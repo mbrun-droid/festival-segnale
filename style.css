@@ -6,8 +6,8 @@
   --colore-primario-scuro: #163454;
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
-  --font-testo: Arial, Helvetica, sans-serif;
-  --font-titoli: Georgia, "Times New Roman", serif;
+  --font-testo: 'Inter', Arial, sans-serif;
+  --font-titoli: 'Inter', Arial, sans-serif;
 }
 
 * {
@@ -214,28 +214,137 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/* =========================================
-   Info e luoghi: Galleria Swiper e Mappa
-   ========================================= */
 
-.swiper-slide img {
+/* Info e luoghi: componenti aggiunti al sito esistente. */
+button {
+  padding: 0.65rem 0.5rem;
+  border: 2px solid var(--colore-primario);
+  border-radius: 0.5rem;
+  background: var(--colore-primario);
+  color: #ffffff;
+  font-family: var(--font-testo);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--colore-primario-scuro);
+}
+
+button:focus {
+  outline: 3px solid var(--colore-testo);
+}
+
+.venue-gallery {
+  max-width: 54rem;
+}
+
+.venue-swiper {
+  width: 100%;
+}
+
+.venue-slide {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.venue-slide img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.venue-slide figcaption {
+  padding: 1.25rem;
+}
+
+.gallery-controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.gallery-count {
+  margin: 0.75rem 0 0;
+  text-align: center;
+}
+
+@media (max-width: 319px) {
+  .gallery-label {
+    font-size: 0;
+  }
+}
+
+.map-container {
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 28rem;
+  border: 0;
+}
+
+.venue-addresses {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.venue-address {
+  padding: 1.25rem;
+  border: 1px solid #b7c0b7;
   border-radius: 0.75rem;
 }
 
-.swiper-slide p {
-  margin-top: 0.75rem;
-  padding-bottom: 2rem;
+.teaching-note {
+  margin-top: 2rem;
 }
 
-/* Adattamento cromatico dei controlli Swiper */
-.swiper-button-next,
-.swiper-button-prev {
-  color: var(--colore-primario-scuro);
+@media (min-width: 768px) {
+  .venue-addresses {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* =========================================
+   Esercitazione 7: Intestazione e Menu
+   ========================================= */
+
+/* Intestazione sticky (bloquée en haut) */
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--colore-sfondo);
+  z-index: 1000;
 }
 
-#mappa-sedi {
-  margin-bottom: 1rem;
+/* Menu responsive - Disposition mobile (colonne) */
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  margin-right: 0;
+  padding: 0.5rem 0;
+}
+
+/* Menu responsive - Disposition ordinateur (ligne) */
+@media (min-width: 600px) {
+  nav {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
 }
