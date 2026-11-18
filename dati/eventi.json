@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "titolo": "Lettere in movimento",
+    "data": "2026-06-12",
+    "orario": "10:00",
+    "categoria": "Incontro",
+    "descrizione": "Come cambia un messaggio quando cambiano le lettere? Un incontro su tipografia, ritmo e comunicazione visiva.",
+    "immagine": "assets/lettere-in-movimento.svg",
+    "immagine_alt": "Lettere geometriche disposte su una griglia",
+    "sede_id": 1
+  },
+  {
+    "id": 2,
+    "titolo": "Materia seconda",
+    "data": "2026-06-12",
+    "orario": "14:00",
+    "categoria": "Laboratorio",
+    "descrizione": "Come dare nuova vita agli scarti di produzione? Un laboratorio pratico sui materiali di recupero e l'economia circolare.",
+    "immagine": "assets/materia-seconda.svg",
+    "immagine_alt": "Cerchio materico su fondo scuro",
+    "sede_id": 2
+  },
+  {
+    "id": 3,
+    "titolo": "Città manifesto",
+    "data": "2026-06-12",
+    "orario": "18:00",
+    "categoria": "Mostra",
+    "descrizione": "I muri raccontano. Una mostra sui manifesti urbani che hanno cambiato il volto della città negli ultimi decenni.",
+    "immagine": "assets/citta-manifesto.svg",
+    "immagine_alt": "Composizione astratta di rettangoli sovrapposti",
+    "sede_id": 3
+  },
+  {
+    "id": 4,
+    "titolo": "Oggetti in dialogo",
+    "data": "2026-06-13",
+    "orario": "10:00",
+    "categoria": "Incontro",
+    "descrizione": "Designer e artigiani discutono come nascono gli oggetti quotidiani, tra funzione, cura dei dettagli e possibilità di riparazione.",
+    "immagine": "assets/oggetti-dialogo.svg",
+    "immagine_alt": "Due forme geometriche si fronteggiano sopra una linea comune",
+    "sede_id": 1
+  },
+  {
+    "id": 5,
+    "titolo": "Progettare insieme",
+    "data": "2026-06-13",
+    "orario": "14:00",
+    "categoria": "Laboratorio",
+    "descrizione": "Un workshop aperto per imparare metodi collaborativi e ripensare gli spazi di quartiere con chi li abita.",
+    "immagine": "assets/progettare-insieme.svg",
+    "immagine_alt": "Tre cerchi interconnessi da linee",
+    "sede_id": 2
+  },
+  {
+    "id": 6,
+    "titolo": "Mappe per abitare",
+    "data": "2026-06-13",
+    "orario": "18:00",
+    "categoria": "Mostra",
+    "descrizione": "Non solo strade e piazze. Una mostra sulle mappe affettive e le geografie personali di chi vive la città.",
+    "immagine": "assets/mappe-abitare.svg",
+    "immagine_alt": "Reticolo di linee che formano un percorso",
+    "sede_id": 3
+  }
+]
