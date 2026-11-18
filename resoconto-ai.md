@@ -1,0 +1,5 @@
+## Sessione Esercitazione 8 - 18 Novembre
+**Richieste e proposte:** Ho chiesto supporto per completare l'Esercitazione 8 (passaggio dai contenuti ai dati). L'IA mi ha fornito la struttura dei file `eventi.json` e `sedi.json`, il codice per il diagramma `SCHEMA.md` e gli script per generare la pagina dinamicamente.
+**Uso e modifiche:** Ho integrato i dati, svuotato la griglia HTML statica e collegato `programma.js` e `info.js` per richiamare i file JSON e l'API Open-Meteo.
+**Problemi e soluzioni:** Abbiamo risolto il blocco di sicurezza del browser (CORS) passando dall'apertura classica (`file://`) all'estensione Live Preview (`http://127.0.0.1`). Abbiamo anche risolto un errore di posizionamento del file `info.js` nell'albero delle cartelle e un problema di sintassi dell'interpolazione per una collega.
+**Verifica:** Controllato tramite Live Preview, 6 eventi generati correttamente e meteo funzionante.
