@@ -39,3 +39,7 @@ erDiagram
         string immagine_alt
         number sede_id
     }
+
+    ## 7. Origine dei dati (Esercitazione 9)
+I dati di `EVENTO` e `SEDE` sono stati migrati dai file JSON locali a un foglio Google pubblicato in formato CSV e letti tramite la libreria **Papa Parse**.
+È stata inoltre aggiunta una terza scheda `notizie` alimentata tramite `IMPORTFEED` dal feed RSS di ANSA Piemonte (campi: `titolo`, `url`, `data`).
