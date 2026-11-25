@@ -1,0 +1,7 @@
+id,titolo,data,orario,categoria,descrizione,immagine,immagine_alt,sede_id
+1,"Lettere in movimento",2026-06-12,10:00,Incontro,"Come cambia un messaggio quando cambiano le lettere? Un incontro su tipografia, ritmo e comunicazione visiva.",assets/lettere-in-movimento.svg,"Lettere geometriche disposte su una griglia",1
+2,"Materia seconda",2026-06-12,14:00,Laboratorio,"Come dare nuova vita agli scarti di produzione? Un laboratorio pratico sui materiali di recupero e l'economia circolare.",assets/materia-seconda.svg,"Cerchio materico su fondo scuro",2
+3,"Città manifesto",2026-06-12,18:00,Mostra,"I muri raccontano. Una mostra sui manifesti urbani che hanno cambiato il volto della città negli ultimi decenni.",assets/citta-manifesto.svg,"Composizione astratta di rettangoli sovrapposti",3
+4,"Oggetti in dialogo",2026-06-13,10:00,Incontro,"Designer e artigiani discutono come nascono gli oggetti quotidiani, tra funzione, cura dei dettagli e possibilità di riparazione.",assets/oggetti-dialogo.svg,"Due forme geometriche si fronteggiano sopra una linea comune",1
+5,"Progettare insieme",2026-06-13,14:00,Laboratorio,"Un workshop aperto per imparare metodi collaborativi e ripensare gli spazi di quartiere con chi li abita.",assets/progettare-insieme.svg,"Tre cerchi interconnessi da linee",2
+6,"Mappe per abitare",2026-06-13,18:00,Mostra,"Non solo strade e piazze. Una mostra sulle mappe affettive e le geografie personali di chi vive la città.",assets/mappe-abitare.svg,"Reticolo di linee che formano un percorso",3
